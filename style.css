@@ -1,0 +1,129 @@
+/*COSAS QUE MEJORAR: tamaño de la imagen, darle un limite para su tamaño que no sea vh, y el desbordamiento de p del header*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Suave;
+    background-color: black;
+}
+
+/*------HEADER SECTION------*/
+header{
+    background-image: url("fondo2.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    position: relative;
+}
+h1{
+    margin: 0;
+    text-wrap: balance;
+    font-size: 2.3rem;
+    margin-bottom: 8vh;
+}
+.header__item--conteiner{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 90vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.header__item--p{
+    text-wrap: pretty;
+    font-size: 1rem;
+    color: rgb(165, 165, 165);
+}
+.header__item--contImg{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2vh;
+}
+.header__item--img{
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.header__item--overdelay{
+    background-color: rgba(0, 0, 0, 0.724);
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+/*------NAV SECTION------*/
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: #2b2b2b ;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+}
+.nav__item{
+    color: white;
+}
+.nav__item--ul{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.nav__item--li{
+ list-style: none;
+ border-radius: 15px;
+ transition: box-shadow .15s ease-in-out;
+ display: flex;
+ box-sizing: border-box;
+ flex-shrink: 0;
+ padding: 10px;
+}
+
+.nav__item--link{
+    display: inline-block;
+    color: rgb(223, 223, 223);
+    margin: auto;
+}
+
+.nav__item--li:hover{
+    box-shadow: 0 0 3px 1px rgb(255, 255, 255);
+}
+.nav__item--logo{
+    height: 300px;
+    width: 300px;
+}
+.principalSection{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+    box-sizing: border-box;
+}
+.principalSection__item{
+    color: white;
+}
+.principalSection__item--p{
+    margin: 1vh;
+    font-style: italic;
+    color: rgb(211, 211, 211);
+    text-wrap: wrap;
+}
+.principalSection__item--titulo{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-wrap: balance;
+    margin-bottom: 5vh;
+}
+
+/*Mejorar el nav*/
